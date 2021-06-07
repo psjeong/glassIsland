@@ -1,0 +1,297 @@
+
+@font-face {
+    font-family: 'ELAND_Choice_L';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_L.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {font-family: 'ELAND_Choice_L',sans-serif;}
+* .container {max-width:1280px; margin:0 auto}
+.pf_1 {font-size:1.1rem;}
+.fw_b {font-weight: bold;}
+
+
+#main {background: #f2f4f7 !important;padding-bottom:20px;}
+
+.collapse.in{
+    -webkit-transition-delay: 4s;
+    transition-delay: 5s;
+    visibility: visible;
+}
+
+/* nav */
+.navbar .allMenu {display:none;}
+.topNav .logoWhite {display: block; margin:15px auto 15px;}
+
+.navbar-expand-lg .navbar-nav .dropdown-menu {
+    position: absolute;
+    top: 80%; left: 0;
+    padding-top:5px;
+    z-index:21;
+}
+.dropdown-item.active, .dropdown-item:active {color:#333}
+
+#navbarResponsive {position:relative;}
+#navbarResponsive .nav-item:hover #navBg {display: block;}
+#navbarResponsive .navbar-nav li {margin:0 46px;}
+/*
+#navBg {
+  position:absolute;
+  top:100%; left:0; right:0;
+  z-index:20;
+  height:250px;
+  background-color:red;
+} */
+#glassLogo {margin: 20px auto;}
+
+
+/* 상단 */
+.parallax-mirror {display:none;}
+
+.navbar {padding:0;display:flex; flex-direction: column; background-color:#fff}
+.dropdown-toggle::after {content:'';display:none;}
+
+
+
+.navbar-nav .nav-item > a {display:inline-block;  padding:20px 0}
+.dropdown:hover .dropdown-menu {display:block; padding-top:20px; background-color:transparent; border:none}
+.navbar .dropdown.show a:active,.dropdown-item:focus, .dropdown-item:hover {background-color: transparent}
+
+
+
+#navbarResponsive .navbar-nav li:hover ul { display:block;
+}
+
+/* 스크롤 터질때  상단 */
+.scroll .navbar {display:flex; flex-direction: row; justify-content: space-around; position:fixed; top:0; left:0;right:0; z-index:90000; padding:0; background-color:#fff; }
+.scroll #navbarResponsive .navbar-nav li {margin:0 26px;}
+.scroll .navbar-nav .nav-item > a {display:inline-block;  padding:0}
+.scroll #navBg {z-index:20; background-color:#fff; position:absolute; top:98%; left:0; right:0; height: 0;transition:0.3;box-shadow: 0 5px 5px 1px rgb(0 0 0 / 5%);}
+
+.scroll #navarInner {width: 1320px; display: flex; flex-direction:row;transition:all .3s;}
+.scroll #navbarResponsive {position:relative; margin-top:0;}
+
+
+
+/* 슬라이드,공지사항,심플메뉴 */
+.mainBox {position:relative;}
+.mainBox img {width:330px;}
+
+  /* 슬라이드 */
+  #sliderBn {width:702px; height:336px;}
+  #sliderBn .owl-dots {display: none;}
+  #sliderBn .owl-stage-outer {max-width: 702px; height:100%; margin:0 auto}
+  .mainBox .slider {height:100%; transform: translateY(37px);}
+
+  /* 공지사항,심플메뉴 */
+  .mainBox .guidanceBox {transform: translateY(35px);}
+
+  /* 공지사항 */
+  .mainBox .guidanceBox .notice {border:1px solid #ddd; border-radius:10px; background-color:#fff}
+  .mainBox .notice {width:523px; margin: 0 auto;}
+  .mainBox .notice .one_more {
+      position: absolute;
+      top: 15px;
+      right: 40px;
+      font-size: 30px;
+    }
+
+  /* 심플메뉴 */
+  .mainBox .simpleMenu li {border-right:1px solid #ddd; background-color:#fff;}
+  .mainBox .simpleMenu li:last-child {border:none;}
+  .mainBox .simpleMenu li > a {padding:8px;}
+  .mainBox .simpleMenu li > a > i {margin-bottom: 5px;}
+  .mainBox .simpleMenu li > a,.simpleMenu li > a > i {display:block; text-align:center;}
+  .mainBox .simpleMenu .topside li:last-child {border-right:1px solid #ddd}
+  .mainBox .simpleMenu .topside,.mainBox .simpleMenu .underside {border:1px solid #ddd}
+  .mainBox .simpleMenu .topside {border-right:0}
+  .mainBox .simpleMenu .underside {border-left:none}
+
+
+
+/* 시설안내 */
+.facility {margin-top:60px; }
+.facility .facilityInfo {border:1px solid #ddd; border-radius:0 20px; background-color:#fff; padding:45px 20px 0;}
+.facility h2 {color:#222;}
+.facility h2:after {content:'';display:block; margin-top:15px; width:40px; height:1px; background-color:#222}
+
+#guide {display:flex; flex-direction: column-reverse;transform: translateY(-43px);}
+#guide .sliderItme {position:relative;}
+#guide .sliderItme .guideBG {position:absolute; top:0;left:0; right:0;height:100%; background:transparent;}
+#guide .sliderItme:hover .guideBG{background-color:rgba(0,0,0,0.5)}
+#guide .sliderItme:hover h3,#guide .sliderItme:hover p {display: block; z-index:10}
+#guide .sliderTitle h3 {display:none; position:absolute; left:50%; top:40%; color:#fff; font-size:16px; transform:translate(-50%, -40%);}
+#guide .sliderTitle p {display:none; position:absolute; left:50%; top:70%; color:#fff; font-size:14px;transform:translate(-50%, -70%);}
+#guide .sliderTitle p span {vertical-align: middle;}
+#guide .sliderTitle p i {margin-left:5px; vertical-align: middle;}
+
+#guide .owl-dots {display: none;}
+#guide .owl-theme .owl-nav {margin-top: -160px;}
+#guide .owl-theme .owl-dots, .owl-theme .owl-nav {text-align: right;-webkit-tap-highlight-color: transparent;}
+
+#guide .owl-nav button {border:1px solid #ddd; line-height: 18px; padding:0 2px!important; outline:none;}
+#guide .owl-nav button:hover {background-color:transparent}
+#guide .owl-nav button img {width:11px;}
+
+
+/* 안내 (체험 안내, 박물관 소개, 전시안내 ) */
+.infoTxt {margin:20px auto 50px;}
+.infoTxt h2 {margin-bottom: 20px;}
+.infoTxt h2:after {content:'';display:block; margin-top:15px; width:40px; height:1px; background-color:#222}
+.infoTxt > div {margin-right:50px;}
+.infoTxt > div:last-child {margin-right:0}
+
+.guideBox {border:1px solid #ddd; border-radius:0 20px; background-color:#fff;padding:20px; }
+
+  /* 체험 안내 */
+  #experience .card-group .card img {height: 92px; overflow: hidden;}
+
+  /* GLASS ISLAND - 유리섬 소개 */
+  .introduce {position:relative;}
+  .introduce .txt {
+    position: absolute;
+    right: 141px; top: 305px;
+    border: 1px solid #222;
+    background: #fff;
+    width: 444px; height: 274px;
+    padding:50px;
+  }
+  .youtube {position:relative; height:0; padding-bottom:165px;}
+  .youtube iframe {
+    width:265px; height:100%;
+    position:absolute;
+    top:0;left:0;right:0;
+    height:151px;
+  }
+
+  /* 전시안내 */
+  .exhibitGuide .card-group .card {border:none;}
+  .exhibitGuide .card-group .card img {height: 387px; overflow: hidden;}
+  #experience .card {border:none;}
+  #experience .card-body {padding:10px;}
+  .exhibitGuide .owl-theme .owl-nav.disabled+.owl-dots {
+      margin-top: 0 !important;
+      position: absolute !important;
+      right: 20px !important;
+      bottom: 0 !important;
+  }
+
+
+/* 지도 */
+.map {position:relative; }
+.map .cont {
+  width:250px; height:200px;
+  z-index:90000; padding:10px;
+  position:absolute; top:50%; right:20%;
+  transform:translateY(-50%);
+  background-color:#fff;
+  border:1px solid #ddd; border-radius:10px;
+}
+.map .cont .txt span {font-weight:bold;  color:#c09973}
+.map h3:after {content:''; display:block; border-bottom:1px solid #222; margin-top:10px;}
+.map h3 img {display:block;width:200px; margin:0 auto}
+
+.root_daum_roughmap .wrap_controllers {display:none;}
+
+
+/* footer */
+footer {border-top:1px solid #ddd}
+footer .ansanArt img {width:180px;}
+
+.ft_info:after {content:''; display:block; border-bottom:1px solid #ddd;}
+
+address a {vertical-align: middle;}
+address span:after {
+  content:''; display:inline-block;
+  border-right:2px solid #ccc;
+  height:15px; margin: 0 10px;
+  vertical-align: middle;
+}
+
+#social a {vertical-align:middle}
+#social .naverBlog a {display:inline-block;}
+#social .naverBlog a:hover {z-index:10; background:url(/glassImg/naver_hover.png) no-repeat }
+#social .naverBlog a:hover img {visibility: hidden;}
+
+
+
+/* 퀵메뉴 */
+#quick {position:fixed; top:50%; right:50px; z-index:9000; transform:rotateY(-50%);}
+
+#quick ul li {padding:10px 15px; margin:5px 0; border:1px solid #ddd; border-radius:5px; background-color:#fff;}
+#quick ul li a {color:#222}
+
+
+
+
+
+
+
+/* 반응형 */
+
+@media (max-width: 1382px){
+  #navbarResponsive .navbar-nav li {margin:0 15px;}
+}
+
+@media (max-width: 1298px){
+  .scroll #navbarResponsive .navbar-nav li {margin:0 5px;}
+}
+
+@media (max-width: 1007px){
+  #navbarResponsive .navbar-nav li {margin:0 10px;}
+}
+
+@media (max-width:992px) {
+  .navbar {padding:0;display:block; background-color:#fff}
+  .navBox {width:100%}
+
+  .navbar .allMenu {
+    display:inline-block;
+    border-style:none;
+    background-color:transparent;
+    outline:none;
+  }
+  .navbar-nav .nav-item > a {padding:0;}
+  .navbar-expand-lg .navbar-nav .dropdown-menu {display:none !important;}
+
+
+  .slider,.owl-carousel {width:100% !important; height: 100% !important;}
+  .owl-stage-outer {height:100%}
+
+  .simpleMenu li {font-size:14px}
+
+
+  .youtube {padding-bottom: 541px;}
+  .youtube iframe { width:100%; height: 541px;}
+
+
+
+  .map h3:after {content:''; display:block; border-bottom:1px solid #222; margin-top:10px;}
+  .map h3 img {display:block;width:200px; margin:0 auto}
+  .map .cont {
+    position:static;
+    transform: none;
+    background-color:#fff;
+    margin: 0 auto;
+    width:100%;
+    border:1px solid #ddd; border-radius:10px;
+  }
+  .map .cont .txt {padding:0 80px;}
+
+  #quick {position:fixed; top:50%; right:0; z-index:9000; transform:rotateY(-50%);}
+  #quick ul li {padding:5px 10px; margin:5px 0;}
+  #quick ul li a i {font-size:20px;}
+}
+
+
+@media (max-width:501px) {
+  .youtube {padding-bottom: 249px;}
+  .youtube iframe { width:100%; height: 249px;}
+
+}
+
+
+@media (max-width: 434px){
+  .simpleMenu li a {font-size:13px}
+}

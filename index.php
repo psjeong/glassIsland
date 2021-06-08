@@ -22,7 +22,7 @@ include_once(G5_THEME_PATH.'/head.php');
     <div class="container p-0">
       <div class="d-lg-flex d-block justify-content-lg-between">
         <div class="slider pl-3 pr-3">
-          <?php echo latest('theme/pic_main_owl', 'glassSketch', 5, 100); ?>
+          <?php echo latest('theme/main_slider', 'glassSketch', 5, 100); ?>
         </div>
         <div class="guidanceBox ">
           <div class="notice col-11 mt-3 mt-lg-0">
@@ -56,7 +56,7 @@ include_once(G5_THEME_PATH.'/head.php');
           <p class="f14">다양한 공간에서 볼 수 있는<br> 유리공예의 아름다움</p>
         </div>
         <div class="guideBD col-lg-8 mt-5 mt-lg-0 p-0">
-          <?php echo latest('theme/pic_guide_owl', 'guide', 12, 100); ?>
+          <?php echo latest('theme/guide', 'guide', 12, 100); ?>
         </div>
       </div>
     </div>
@@ -70,23 +70,18 @@ include_once(G5_THEME_PATH.'/head.php');
       <div class="experience pb-0 col-12 col-lg-5 guideBox mb-5 mb-lg-0">
         <h2 class="f21">체험 안내</h2>
         <p class="f14">아이들과 함께 쌓아가는 추억,<br>다양한 유리 공예를 즐겨보세요.</p>
-        <?php echo latest('theme/pic_experience_company', 'experience', 6, 50); ?>
+        <?php echo latest('theme/experience', 'experience', 6, 50); ?>
       </div>
       <div class="introduce col-12 col-lg-3 guideBox  mb-5 mb-lg-0">
         <h2 class="f21">GLASS ISLAND</h2>
         <div class="youtube mt-3 mt-lg-0 col-lg-5 pr-0 pl-0">
           <iframe src="https://www.youtube.com/embed/JlbiZuYQssA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-        <p class="f14 py-4 mb-1">
-          한국의 무라노, 대부도 유리섬은 43,000㎡의<br>
-          드넓은 공간에 최고의 유리조형작가들의<br>
-          예술혼이 녹아 숨쉬는 환상적인 유리조형<br>
-          작품과아름다운 일몰과 서해갯벌이 장관으로 어우러진 문화체험 공간입니다.
-        </p>
+        <?php echo latest('theme/glassIsland_info', 'glassInfo', 1, 100); ?>
       </div>
       <div class="exhibitGuide col-12 pb-3 col-lg-3 guideBox  mb-5 mb-lg-0">
     		<h2 class="f21">전시 안내</h2>
-        <?php echo latest('theme/pic_exhibitGuide_owl', 'exhibitGuide', 12, 100); ?>
+        <?php echo latest('theme/exhibitGuide', 'exhibitGuide', 12, 100); ?>
       </div>
   </section>
   <!-------------------------- /.체험안내, 박물관 소개, 전시안내 -------------------------->
@@ -99,10 +94,7 @@ include_once(G5_THEME_PATH.'/head.php');
     <div class="cont col-11 my-3 my-lg-0">
       <h3><img src="/glassImg/main_logo_black.png" alt="로고"></h3>
       <div class="txt f14">
-        <span>ADDRESS</span>
-        <p>경기 안산시 단원구 부흥로 254 유리섬</p>
-        <span>TEL</span>
-        <p>010-4727-0363</p>
+        <?php echo latest('theme/map_info', 'mapInfo', 1, 100); ?>
       </div>
     </div>
   </section>
@@ -113,6 +105,7 @@ include_once(G5_THEME_PATH.'/head.php');
 <div id="quick">
   <div class="quickBox">
     <ul>
+      <li><a href="//github.com/psjeong/glassIsland.git" target="_blank"><i class="xi-github xi-2x"></i></a></li>
       <li><a href="#" target="_blank"><i class="xi-briefcase xi-2x"></i></a></li>
       <li><a href="//open.kakao.com/o/sHSbYT6c" target="_blank"><i class="xi-kakaotalk xi-2x"></i></a></li>
       <li><a href="tel:010-4727-0363" target="_blank"><i class="xi-call xi-2x"></i></a></li>

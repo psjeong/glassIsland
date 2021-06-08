@@ -28,9 +28,7 @@
 						단독 작업 100% | 반응형 제작
 					</p>
 					<address class="f13 p-0 m-0">
-						경기 안산시 단원구 부흥로 254 유리섬<br />
-						 <span><a href="tel:010-4727-0363">Tel : 010-4727-0363</a></span>
-						 <a href="mailto:sj926thwjdk@naver.com">Email : sj926thwjdk@naver.com</a><br />
+						<?php echo latest('theme/company_info', 'company', 1, 100); ?>
 					</address>
 				</div>
 

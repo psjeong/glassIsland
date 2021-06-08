@@ -63,7 +63,6 @@ $(document).ready(function () {
     loop:true,
     margin:10,//이미지 사이의 간격
     nav:false,
-    navText: ["<img src='/glassImg/prevBtn.png'>","<img src='/glassImg/nextBtn.png'>"],
     responsive:{
       0:{
         items:1 // 모바일
@@ -105,5 +104,10 @@ $(document).ready(function () {
     "key" : "263jm",
     "mapHeight" : "360"
   }).render();
+
+  $("#popup .closebtn").click(function(){
+    $('#popup').addClass('popClose');
+    $('#pDim').addClass('popClose');
+  });
 
 });

@@ -1,10 +1,5 @@
+@import url('//sj926thwjdk.cafe24.com/glassisland/theme/ety_wide_theme/css/font_family.css');
 
-@font-face {
-    font-family: 'ELAND_Choice_L';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts-20-12@1.0/ELAND_Choice_L.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
 
 * {font-family: 'ELAND_Choice_L',sans-serif;}
 * .container {max-width:1280px; margin:0 auto}
@@ -19,6 +14,69 @@
     transition-delay: 5s;
     visibility: visible;
 }
+
+#popup {
+  position:relative;
+  z-index:90000000;
+  position:fixed;
+  top:50%;left:50%;
+  transform: translate(-50%, -50%);
+  background-color:transparent;
+  color:#fff
+}
+#popup.popClose,#pDim.popClose {display:none;}
+#popup .popleft {margin-right:40px;}
+#popup .closebtn {position:absolute; top:10px; right:10px; border:none; background-color:transparent}
+#popup .popTop h1 {font-weight:normal; font-size:18px; margin-bottom:20px;}
+#popup .psjBag img {width:476px;margin-bottom:20px;}
+#popup .popTxt { margin-top:50px;}
+#popup .popTxt dl,#popup .popTxt p {text-align: left; font-size:14px; margin-bottom: 20px;}
+#popup .popTxt dl dt {
+  font-size:15px; font-weight:bold;margin-bottom:10px;vertical-align: middle;}
+#popup .popTxt dl dt::before {
+  content:'';
+  display:inline-block;
+  width:3px; height:18px;
+  background-color:#fff;
+  margin-right:8px;
+  vertical-align: middle;
+}
+#popup .popTxt dl dd {margin-bottom:10px; padding-left:13px;}
+#popup .popTxt .popleft p {margin-bottom: 15px;}
+#popup .popTxt .popleft .workDay strong {margin-right:12px;}
+#popup .popRight .addPortfolio p::before {
+  content:''; display:inline-block;
+  width:3px; height:18px;
+  background-color:#fff;
+  margin-right:8px;
+  vertical-align: middle;
+}
+#popup .popRight .work img {margin-left:20px;}
+#popup .popRight .addPortfolio .psjInfo {margin-top:10px;}
+
+#popup .popTxt .popleft p:first-child {margin-top:5px;}
+
+#icon {margin-left:30px}
+#icon li {display:inline-block; margin-right:10px;}
+#icon li a {color:#fff}
+
+#popup .addPortfolio .qr a {color:#fff}
+#popup .addPortfolio {position:relative;}
+#popup .addPortfolio .qr img {display:block;width: 130px;}
+#popup .addPortfolio .qr span {display:block;margin-top:10px; font-size: 12px;}
+
+#popup .popBox {max-width:1000px;}
+
+
+
+
+#psjInfo li {margin:5px 0;font-size:15px;}
+#psjInfo li a {color:#fff}
+
+.closebtn i {color:#fff}
+#pDim {position: fixed; z-index: 9000000;background:rgba(0,0,0,0.8);width:100%;height:100%}
+
+
 
 /* nav */
 .navbar .allMenu {display:none;}
@@ -194,6 +252,8 @@
 
 .root_daum_roughmap .wrap_controllers {display:none;}
 
+.map .lat p {margin-bottom:10px;padding: 0;}
+.map .lat ul {margin-bottom:0;}
 
 /* footer */
 footer {border-top:1px solid #ddd}
@@ -214,13 +274,14 @@ address span:after {
 #social .naverBlog a:hover {z-index:10; background:url(/glassImg/naver_hover.png) no-repeat }
 #social .naverBlog a:hover img {visibility: hidden;}
 
+footer .lat p,.lat ul {margin-bottom:0;}
 
 
 /* 퀵메뉴 */
-#quick {position:fixed; top:50%; right:50px; z-index:9000; transform:rotateY(-50%);}
+#quick {position:fixed; top:50%; right:50px; z-index:9000; transform:translateY(-50%);}
 
-#quick ul li {padding:10px 15px; margin:5px 0; border:1px solid #ddd; border-radius:5px; background-color:#fff;}
-#quick ul li a {color:#222}
+#quick ul li {margin:5px 0; border:1px solid #ddd; border-radius:5px; background-color:#fff;}
+#quick ul li a {display:block;padding:10px 15px;  color:#222;}
 
 
 
@@ -243,6 +304,15 @@ address span:after {
 }
 
 @media (max-width:992px) {
+  #popup {width:310px;}
+  #popup .popRight .addPortfolio .psjInfo {margin-top:0px;}
+  #popup .popTxt {margin-top: 0px;}
+  #popup .psjBag img {display:none;}
+  #popup .addPortfolio .qr img {width: 95px;}
+  #popup .addPortfolio .qr span:last-child {margin-top:0;}
+  #popup .addPortfolio .qr span {margin-top:10px;}
+
+
   .navbar {padding:0;display:block; background-color:#fff}
   .navBox {width:100%}
 
@@ -280,7 +350,6 @@ address span:after {
   .map .cont .txt {padding:0 80px;}
 
   #quick {position:fixed; top:50%; right:0; z-index:9000; transform:rotateY(-50%);}
-  #quick ul li {padding:5px 10px; margin:5px 0;}
   #quick ul li a i {font-size:20px;}
 }
 

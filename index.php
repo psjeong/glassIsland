@@ -106,7 +106,7 @@ include_once(G5_THEME_PATH.'/head.php');
   <div class="quickBox">
     <ul>
       <li><a href="//github.com/psjeong/glassIsland.git" target="_blank"><i class="xi-github xi-2x"></i></a></li>
-      <li><a href="#" target="_blank"><i class="xi-briefcase xi-2x"></i></a></li>
+      <li><a href="//drive.google.com/file/d/1a9jU9ZzcZ8rUNahMyGkdS3PYommtVbDC/view" target="_blank"><i class="xi-briefcase xi-2x"></i></a></li>
       <li><a href="//open.kakao.com/o/sHSbYT6c" target="_blank"><i class="xi-kakaotalk xi-2x"></i></a></li>
       <li><a href="tel:010-4727-0363" target="_blank"><i class="xi-call xi-2x"></i></a></li>
     </ul>

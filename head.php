@@ -38,6 +38,66 @@ if(defined('_INDEX_')) {
 ?>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+<div id="popup">
+  <div class="popTop d-flex flex-column-reverse text-center">
+    <h1>NCS | 박소정의 리뉴얼</h1>
+    <p><img src="/glassImg/gnu_logo.png" alt="그누보드"></p>
+  </div>
+    <div class="popTxt d-lg-flex justify-content-lg-around">
+      <div class="popleft">
+        <div>
+          <dl>
+            <dt>제작 내용</dt>
+            <dd>- 최근게시를 활용해 컨텐츠<strong>80%이상 관리자 수정편집</strong>가능 </dd>
+            <dd>- 지루함을 느끼지 못하게 최대한 골든존 안으로 작업</dd>
+            <dd>- 반응형 제작</dd>
+            <dd>- 부트스트랩 4 기반으로 작업</dd>
+            <dd>- 시멘틱 구조를 활용해 웹접근성과 검색엔진 최적화 </dd>
+          </dl>
+          <div class="psjBag"><img src="/glassImg/sjPic.jpg" alt="박소정"></div>
+        </div>
+
+      </div>
+
+      <div class="popRight">
+        <div class="addPortfolio">
+          <div class="work">
+            <div class="d-flex d-lg-block">
+              <p class="workDay"><strong>작업기간</strong> 14일</p>
+              <p class="ml-5 pl-3 pl-lg-0 ml-lg-0"><strong>100% 단독</strong>작업</p>
+            </div>
+            <div class="d-flex d-lg-block mb-4 mb-lg-0">
+              <p><strong>seo 최적화</strong></p>
+              <img src="/glassImg/seo.png" alt="seo최적화">
+            </div>
+          </div>
+          <div class="psjInfo d-flex">
+            <div class="qr">
+              <a href="//sj926thwjdk.cafe24.com/">
+                <img src="/glassImg/psj_portfolio.png" alt="박소정의 자기소개 페이지">
+                <span>다양한 포트폴리오 보러가기</span>
+                <span>sj926thwjdk.cafe24.com</span>
+              </a>
+            </div>
+            <div id="icon">
+              <ul class="d-lg-flex">
+                <li><a href="//github.com/psjeong/heys" target="_blank"><i class="xi-github xi-3x"></i></a></li>
+                <li><a href="//open.kakao.com/o/sHSbYT6c" target="_blank"><i class="xi-kakaotalk xi-3x"></i></a></li>
+              </ul>
+              <ul class="d-lg-flex">
+                <li><a href="tel:010-4727-0363" target="_blank"><i class="xi-call xi-3x"></i></a></li>
+                <li><a href="mailto:sj926thwjdk@naver.com" target="_blank"><i class="xi-mail-o xi-3x"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <button class="closebtn"><i class="xi-close-thin xi-2x"></i></button>
+</div>
+<div id="pDim"></div>
 
 
 <!-------------------------- 네비게이션 -------------------------->

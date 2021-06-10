@@ -11,6 +11,19 @@ $(function(){
 
 });
 
+$("#navarInner .navbar-nav").hover(function(){
+  $('#navBg').addClass('open');
+});
+
+$("#navarInner .navbar-nav").mouseleave(function(){
+  $('#navBg').removeClass('open');
+});
+
+
+
+
+
+
 $(document).ready(function () {
   //owl
   jQuery("#sliderBn").owlCarousel({

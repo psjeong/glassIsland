@@ -38,57 +38,77 @@ if(defined('_INDEX_')) {
 ?>
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<div id="popup">
+
+<section id="popup" >
   <div class="popTop d-flex flex-column-reverse text-center">
     <h1>NCS | 박소정의 리뉴얼</h1>
     <p><img src="/glassImg/gnu_logo.png" alt="그누보드"></p>
   </div>
-    <div class="popTxt d-lg-flex justify-content-lg-around">
+    <div class="popTxt d-block d-lg-flex justify-content-lg-around f14">
       <div class="popleft">
-        <div>
-          <dl>
-            <dt>제작 내용</dt>
-            <dd>- 최근게시를 활용해 컨텐츠<strong>80%이상 관리자 수정편집</strong>가능 </dd>
-            <dd>- 지루함을 느끼지 못하게 최대한 골든존 안으로 작업</dd>
-            <dd>- 반응형 제작</dd>
-            <dd>- 부트스트랩 4 기반으로 작업</dd>
-            <dd>- 시멘틱 구조를 활용해 웹접근성과 검색엔진 최적화 </dd>
-          </dl>
-          <div class="psjBag"><img src="/glassImg/sjPic.jpg" alt="박소정"></div>
+        <div class="making">
+          <div class="makingContent">
+            <h2>제작 내용</h2>
+            <ul class="content">
+              <li>- 최근게시를 활용해 컨텐츠<strong>80%이상 관리자 수정편집</strong>가능</li>
+              <li>- 공통 클래스,레이아웃 클래스 부트스트랩 4 활용</li>
+              <li>- 시멘틱 구조를 활용해 웹접근성과 검색엔진 최적화</li>
+              <li>- 단독페이지 제작을 지양하여 100% 관리자 페이지로 컨텐츠 관리</li>
+              <li>- SEO 최적화</li>
+            </ul>
+          </div>
+          <ul class="work d-flex d-lg-block">
+            <li class="workList"><strong>제작 목표</strong>유지보수비용 0%</li>
+            <li class="workList ml-1 ml-lg-0"><strong>작업기간</strong> 14일</li>
+            <li class="pl-1 pl-lg-0 ml-lg-0"><strong>참여도  100%</strong></li>
+          </ul>
+          <ul class="work">
+            <li class="workList"><strong>DB 경로</strong>sj926thwjdk.cafe24.com/psjAdmin-4.0.10.20</li>
+            <li class="workList"><strong>DB 접두어</strong>sjGlass_</li>
+          </ul>
         </div>
 
       </div>
 
+      <div class="center">
+        <div class="file">
+          <h2>PHP - 최근 게시글 경로</h2>
+          <dl class="html">
+            <dt>logo</dt>
+            <dd>/theme/logo/latest.skin.php</dd>
+            <dt>메인 슬라이드 (owl-carousel 플러그인 사용)</dt>
+            <dd>/theme/main_slider/latest.skin.php</dd>
+            <dt>footer 기업 정보</dt>
+            <dd>/theme/company_info/latest.skin.php</dd>
+          </dl>
+          <h2>CUSTOMIZING</h2>
+          <dl class="javaCss">
+            <dt>CSS</dt>
+            <dd>/glassisland/theme/ety_wide_theme/css/psj.css</dd>
+            <dt>JavaScript</dt>
+            <dd>/glassisland/theme/ety_wide_theme/js/psj.js</dd>
+          </dl>
+        </div>
+        <div id="icon">
+          <ul class="d-lg-inline-block d-flex">
+            <li><a href="//github.com/psjeong/glassIsland.git" target="_blank"><i class="xi-github xi-3x"></i></a></li>
+            <li><a href="//open.kakao.com/o/sHSbYT6c" target="_blank"><i class="xi-kakaotalk xi-3x"></i></a></li>
+          </ul>
+          <ul class="d-lg-inline-block d-flex">
+            <li><a href="tel:010-4727-0363" target="_blank"><i class="xi-paper-o xi-3x"></i></a></li>
+            <li><a href="mailto:sj926thwjdk@naver.com" target="_blank"><i class="xi-mail-o xi-3x"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
       <div class="popRight">
         <div class="addPortfolio">
-          <div class="work">
-            <div class="d-flex d-lg-block">
-              <p class="workDay"><strong>작업기간</strong> 14일</p>
-              <p class="ml-5 pl-3 pl-lg-0 ml-lg-0"><strong>100% 단독</strong>작업</p>
-            </div>
-            <div class="d-flex d-lg-block mb-4 mb-lg-0">
-              <p><strong>seo 최적화</strong></p>
-              <img src="/glassImg/seo.png" alt="seo최적화">
-            </div>
-          </div>
-          <div class="psjInfo d-flex">
-            <div class="qr">
-              <a href="//sj926thwjdk.cafe24.com/">
-                <img src="/glassImg/psj_portfolio.png" alt="박소정의 자기소개 페이지">
-                <span>다양한 포트폴리오 보러가기</span>
-                <span>sj926thwjdk.cafe24.com</span>
-              </a>
-            </div>
-            <div id="icon">
-              <ul class="d-lg-flex">
-                <li><a href="//github.com/psjeong/heys" target="_blank"><i class="xi-github xi-3x"></i></a></li>
-                <li><a href="//open.kakao.com/o/sHSbYT6c" target="_blank"><i class="xi-kakaotalk xi-3x"></i></a></li>
-              </ul>
-              <ul class="d-lg-flex">
-                <li><a href="tel:010-4727-0363" target="_blank"><i class="xi-call xi-3x"></i></a></li>
-                <li><a href="mailto:sj926thwjdk@naver.com" target="_blank"><i class="xi-mail-o xi-3x"></i></a></li>
-              </ul>
-            </div>
+          <div class="psjBag"><img src="/glassImg/sjBag_.gif" alt="박소정"></div>
+          <div class="psjInsta"><img src="/glassImg/psj_insta2.jpg" alt="인스타 배경"></div>
+          <div class="qr">
+            <a href="//sj926thwjdk.cafe24.com/" target="_blank">
+              <img src="/glassImg/qrcode_sj.png" alt="박소정의 자기소개 페이지">
+            </a>
           </div>
         </div>
       </div>
@@ -96,7 +116,7 @@ if(defined('_INDEX_')) {
 
 
   <button class="closebtn"><i class="xi-close-thin xi-2x"></i></button>
-</div>
+</section>
 <div id="pDim"></div>
 
 
@@ -113,8 +133,8 @@ if(defined('_INDEX_')) {
   </div>
 
   <div id="navarInner">
-	   <div class="collapse navbar-collapse" id="navbarResponsive" data-hover="dropdown" data-animations="fadeIn fadeIn fadeInUp fadeInRight">
-  	  <ul class="navbar-nav ml-auto">
+    <div class="collapse navbar-collapse" id="navbarResponsive" data-hover="dropdown" data-animations="fadeIn fadeIn fadeInUp fadeInRight">
+	    <ul class="navbar-nav">
     		<?php
     		$sql = " select *
     					from {$g5['menu_table']}
@@ -142,51 +162,49 @@ if(defined('_INDEX_')) {
     		foreach( $menu_datas as $row ){
     			if( empty($row) ) continue;
     		?>
-    			<?php if($row['sub']['0']) { ?>
-    				<li class="nav-item dropdown">
-    					<a class="dropdown-toggle pf_1" href="<?php echo $row['me_link']; ?>" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" target="_<?php echo $row['me_target']; ?>">
-					       <?php echo $row['me_name'] ?>
-    					</a>
-    						<!-- 서브 -->
-                <div class="d2">
-    						<ul class=" dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
-    							<?php
-    							// 하위 분류
-    							$k = 0;
-    							foreach( (array) $row['sub'] as $row2 ){
+  			<?php if($row['sub']['0']) { ?>
+  				<li class="nav-item dropdown">
+  					<a class="dropdown-toggle pf_1" href="<?php echo $row['me_link']; ?>" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" target="_<?php echo $row['me_target']; ?>">
+				       <?php echo $row['me_name'] ?>
+  					</a>
+  						<!-- 서브 -->
 
-    							if( empty($row2) ) continue;
+  						<ul class=" dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+  							<?php
+  							// 하위 분류
+  							$k = 0;
+  							foreach( (array) $row['sub'] as $row2 ){
 
-    							?>
-    							<a class="dropdown-item fw4" href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>"><?php echo $row2['me_name'] ?></a>
+  							if( empty($row2) ) continue;
 
-    							<?php
-    							$k++;
-    							}   //end foreach $row2
+  							?>
+  							<a class="dropdown-item fw4" href="<?php echo $row2['me_link']; ?>" target="_<?php echo $row2['me_target']; ?>"><?php echo $row2['me_name'] ?></a>
 
-    							if($k > 0)
-    							echo '</ul></div>'.PHP_EOL;
-    							?>
-            			<?php }else{?>
+  							<?php
+  							$k++;
+  							}   //end foreach $row2
+
+  							if($k > 0)
+  							echo '</ul>'.PHP_EOL;
+  							?>
+          			<?php }else{?>
           				<li class="nav-item">
           				      <a class="pf_1" href="<?php echo $row['me_link']; ?>" target="_<?php echo $row['me_target']; ?>"><?php echo $row['me_name'] ?></a>
           				</li>
-            			<?php }?>
-	          </li>
+          			<?php }?>
+          </li>
 
-        		<?php
-        		$i++;
-        		}   //end foreach $row
+      		<?php
+      		$i++;
+      		}   //end foreach $row
 
-        		if ($i == 0) {  ?>
-        			<li class="gnb_empty">메뉴 준비 중입니다.<?php if ($is_admin) { ?> <br><a href="<?php echo G5_ADMIN_URL; ?>/menu_list.php">관리자모드 &gt; 환경설정 &gt; 메뉴설정</a>에서 설정하실 수 있습니다.<?php } ?></li>
-        		<?php } ?>
-		  </div>
-		</li>
-    </ul>
+      		if ($i == 0) {  ?>
+      			<li class="gnb_empty">메뉴 준비 중입니다.<?php if ($is_admin) { ?> <br><a href="<?php echo G5_ADMIN_URL; ?>/menu_list.php">관리자모드 &gt; 환경설정 &gt; 메뉴설정</a>에서 설정하실 수 있습니다.<?php } ?></li>
+      		<?php } ?>
+      </ul>
+    </div>
+    <div id="navBg"></div>
 	</div>
-  </div>
-  <div id="navBg"></div>
 </nav>
 
 

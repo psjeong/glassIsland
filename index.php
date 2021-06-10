@@ -79,7 +79,7 @@ include_once(G5_THEME_PATH.'/head.php');
         </div>
         <?php echo latest('theme/glassIsland_info', 'glassInfo', 1, 100); ?>
       </div>
-      <div class="exhibitGuide col-12 pb-3 col-lg-3 guideBox  mb-5 mb-lg-0">
+      <div class="exhibitGuide col-12 pb-2 col-lg-3 guideBox  mb-5 mb-lg-0">
     		<h2 class="f21">전시 안내</h2>
         <?php echo latest('theme/exhibitGuide', 'exhibitGuide', 12, 100); ?>
       </div>

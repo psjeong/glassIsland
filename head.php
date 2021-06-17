@@ -36,10 +36,9 @@ if(defined('_INDEX_')) {
 }
 
 ?>
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 
-<section id="popup" >
+<section id="psjPopup" >
   <div class="popTop d-flex flex-column-reverse text-center">
     <h1>NCS | 박소정의 리뉴얼</h1>
     <p><img src="/glassImg/gnu_logo.png" alt="그누보드"></p>
@@ -50,16 +49,18 @@ if(defined('_INDEX_')) {
           <div class="makingContent">
             <h2>제작 내용</h2>
             <ul class="content">
+              <li>- 모든 페이지는 내용관리와 게시판으로 제작</li>
               <li>- 최근게시를 활용해 컨텐츠<strong>80%이상 관리자 수정편집</strong>가능</li>
               <li>- 공통 클래스,레이아웃 클래스 부트스트랩 4 활용</li>
               <li>- 시멘틱 구조를 활용해 웹접근성과 검색엔진 최적화</li>
               <li>- 단독페이지 제작을 지양하여 100% 관리자 페이지로 컨텐츠 관리</li>
-              <li>- SEO 최적화</li>
+              <li>- SEO 최적화 <span>( #박물관 #체험학습 #현장학습 #유리공예 #단체예약 )</span></li>
+              <li>- jQuery 플러그인 지양</li>
             </ul>
           </div>
           <ul class="work d-flex d-lg-block">
             <li class="workList"><strong>제작 목표</strong>유지보수비용 0%</li>
-            <li class="workList ml-1 ml-lg-0"><strong>작업기간</strong> 14일</li>
+            <li class="workList ml-1 ml-lg-0"><strong>작업기간</strong> 10일</li>
             <li class="pl-1 pl-lg-0 ml-lg-0"><strong>참여도  100%</strong></li>
           </ul>
           <ul class="work">
@@ -89,13 +90,17 @@ if(defined('_INDEX_')) {
             <dd>/glassisland/theme/ety_wide_theme/js/psj.js</dd>
           </dl>
         </div>
+        <div class="useApp">
+          <h2>APP</h2>
+          <p>atom, psd, git</p>
+        </div>
         <div id="icon">
           <ul class="d-lg-inline-block d-flex">
             <li><a href="//github.com/psjeong/glassIsland.git" target="_blank"><i class="xi-github xi-3x"></i></a></li>
             <li><a href="//open.kakao.com/o/sHSbYT6c" target="_blank"><i class="xi-kakaotalk xi-3x"></i></a></li>
           </ul>
           <ul class="d-lg-inline-block d-flex">
-            <li><a href="tel:010-4727-0363" target="_blank"><i class="xi-paper-o xi-3x"></i></a></li>
+            <li><a href="//drive.google.com/file/d/1a9jU9ZzcZ8rUNahMyGkdS3PYommtVbDC/view?usp=sharing" target="_blank"><i class="xi-paper-o xi-3x"></i></a></li>
             <li><a href="mailto:sj926thwjdk@naver.com" target="_blank"><i class="xi-mail-o xi-3x"></i></a></li>
           </ul>
         </div>

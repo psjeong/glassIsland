@@ -118,8 +118,8 @@ $(document).ready(function () {
     "mapHeight" : "360"
   }).render();
 
-  $("#popup .closebtn").click(function(){
-    $('#popup').addClass('popClose');
+  $("#psjPopup .closebtn").click(function(){
+    $('#psjPopup').addClass('popClose');
     $('#pDim').addClass('popClose');
   });
 
